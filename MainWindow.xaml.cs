@@ -31,12 +31,14 @@ namespace GUI_HafsaM
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
             //create string variables
-            string num1 = txtNum1.Text;
-            string num2 = txtNum2.Text;
+            //string num1 = txtNum1.Text;
+            //string num2 = txtNum2.Text;
 
             //parse string variables into numbers
-            double numba1 = int.Parse(num1);
-            double numba2 = int.Parse(num2);
+            double numba1 = double.Parse(txtNum1.Text);
+            double numba2 = double.Parse(txtNum2.Text); 
+            //um guess i found an easier way i should really
+            //start experimenting what my mind tells me lol
 
             //create sign change
             //(the add or subtract label)
@@ -46,12 +48,14 @@ namespace GUI_HafsaM
             //add the 2 numbers together
             //to get the result
             double result = numba1 + numba2;
-
-            //idek why i decided to change
-            //the result back to string and put
-            //it into the result txtbox BUT IT WORKED
+            
+            //covert it back to string and display result
             string w = $"{result}";
             txtResult1.Text = w;
+
+            //create a message box for an invalid number
+            //string g =  
+            //MessageBox.Show();
 
         }//addition button
 
@@ -64,8 +68,8 @@ namespace GUI_HafsaM
             string num2 = txtNum2.Text;
 
             //parse string variables into numbers
-            double numba1 = int.Parse(num1);
-            double numba2 = int.Parse(num2);
+            double numba1 = double.Parse(num1);
+            double numba2 = double.Parse(num2);
 
             //create sign change
             //(the add or subtract label)
@@ -88,11 +92,11 @@ namespace GUI_HafsaM
             string num4 = txtNum4.Text;
 
             //parse string variables into numbers
-            double numba3 = int.Parse(num3);
-            double numba4 = int.Parse(num4);
+            double numba3 = double.Parse(num3);
+            double numba4 = double.Parse(num4);
 
             //create sign change
-            //(the add or subtract label)
+            //(the multiply or divide label)
             string sign = "*";
             lblMultipyOrDivide.Content = sign;
 
@@ -112,11 +116,11 @@ namespace GUI_HafsaM
             string num4 = txtNum4.Text;
 
             //parse string variables into numbers
-            double numba3 = int.Parse(num3);
-            double numba4 = int.Parse(num4);
+            double numba3 = double.Parse(num3);
+            double numba4 = double.Parse(num4);
 
             //create sign change
-            //(the add or subtract label)
+            //(the multiply or divide label)
             string sign = "/";
             lblMultipyOrDivide.Content = sign;
 
@@ -137,14 +141,16 @@ namespace GUI_HafsaM
             string b = txtResult2.Text;
 
             //idk if we're supposed to parse but lets try
-            double result1 = int.Parse(a);
-            double result2 = int.Parse(b);
+            //edit: ofc we are, u have to turn it into
+            //a numberrrrrr!!!!!
+            double result1 = double.Parse(a);
+            double result2 = double.Parse(b);
 
             //create the equation and display the result
             double equation = (result1 + result2) / 2;
             string c = $"{equation}";
             txtAverage.Text = c;
-
+            
         }//average button
 
 
