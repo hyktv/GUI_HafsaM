@@ -35,8 +35,8 @@ namespace GUI_HafsaM
             string num2 = txtNum2.Text;
 
             //parse string variables into numbers
-            int numba1 = int.Parse(num1);
-            int numba2 = int.Parse(num2);
+            double numba1 = int.Parse(num1);
+            double numba2 = int.Parse(num2);
 
             //create sign change
             //(the add or subtract label)
@@ -45,7 +45,7 @@ namespace GUI_HafsaM
 
             //add the 2 numbers together
             //to get the result
-            int result = numba1 + numba2;
+            double result = numba1 + numba2;
 
             //idek why i decided to change
             //the result back to string and put
@@ -64,8 +64,8 @@ namespace GUI_HafsaM
             string num2 = txtNum2.Text;
 
             //parse string variables into numbers
-            int numba1 = int.Parse(num1);
-            int numba2 = int.Parse(num2);
+            double numba1 = int.Parse(num1);
+            double numba2 = int.Parse(num2);
 
             //create sign change
             //(the add or subtract label)
@@ -73,7 +73,7 @@ namespace GUI_HafsaM
             lblAddOrSubtract.Content = sign;
 
             //create equation and display result
-            int result1 = numba1 - numba2;
+            double result1 = numba1 - numba2;
             string x = $"{result1}";
             txtResult1.Text = x;
 
@@ -88,8 +88,8 @@ namespace GUI_HafsaM
             string num4 = txtNum4.Text;
 
             //parse string variables into numbers
-            int numba3 = int.Parse(num3);
-            int numba4 = int.Parse(num4);
+            double numba3 = int.Parse(num3);
+            double numba4 = int.Parse(num4);
 
             //create sign change
             //(the add or subtract label)
@@ -97,7 +97,7 @@ namespace GUI_HafsaM
             lblMultipyOrDivide.Content = sign;
 
             //create equation and display result
-            int result2 = numba3 * numba4;
+            double result2 = numba3 * numba4;
             string y = $"{result2}";
             txtResult2.Text = y;
 
@@ -112,8 +112,8 @@ namespace GUI_HafsaM
             string num4 = txtNum4.Text;
 
             //parse string variables into numbers
-            int numba3 = int.Parse(num3);
-            int numba4 = int.Parse(num4);
+            double numba3 = int.Parse(num3);
+            double numba4 = int.Parse(num4);
 
             //create sign change
             //(the add or subtract label)
@@ -121,7 +121,7 @@ namespace GUI_HafsaM
             lblMultipyOrDivide.Content = sign;
 
             //create equation and display result
-            int result3 = numba3 / numba4;
+            double result3 = numba3 / numba4;
             string z = $"{result3}";
             txtResult2.Text = z;
 
@@ -137,11 +137,11 @@ namespace GUI_HafsaM
             string b = txtResult2.Text;
 
             //idk if we're supposed to parse but lets try
-            int result1 = int.Parse(a);
-            int result2 = int.Parse(b);
+            double result1 = int.Parse(a);
+            double result2 = int.Parse(b);
 
             //create the equation and display the result
-            int equation = (result1 + result2) / 2;
+            double equation = (result1 + result2) / 2;
             string c = $"{equation}";
             txtAverage.Text = c;
 

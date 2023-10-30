@@ -10,13 +10,13 @@
         <Canvas.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="#FFA0B2A4" Offset="0.02"/>
-                <GradientStop Color="#FF296736" Offset="0.983"/>
+                <GradientStop Color="#FF244E2D" Offset="0.983"/>
             </LinearGradientBrush>
         </Canvas.Background>
         <TextBox x:Name="txtNum1" TextWrapping="Wrap" Width="120" Canvas.Left="49" Canvas.Top="112" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtNum2" TextWrapping="Wrap" Width="120" Canvas.Left="225" Canvas.Top="112" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNum2" TextWrapping="Wrap" Width="120" Canvas.Left="236" Canvas.Top="112" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <TextBox x:Name="txtResult1" TextWrapping="Wrap" Width="120" Canvas.Left="389" Canvas.Top="112" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtNum4" TextWrapping="Wrap" Width="120" Canvas.Left="225" Canvas.Top="228" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNum4" TextWrapping="Wrap" Width="120" Canvas.Left="236" Canvas.Top="228" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <TextBox x:Name="txtResult2" TextWrapping="Wrap" Width="120" Canvas.Left="389" Canvas.Top="228" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBox x:Name="txtAverage" TextWrapping="Wrap" Width="307" Canvas.Left="88" Canvas.Top="340" HorizontalAlignment="Left" Height="42" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNum3" TextWrapping="Wrap" Width="120" Canvas.Left="49" Canvas.Top="228" HorizontalAlignment="Left" VerticalAlignment="Top"/>
@@ -25,13 +25,13 @@
         <Label Content="ADD or SUBTRACT" Canvas.Left="49" Canvas.Top="52" Foreground="White" FontFamily="OCR A Extended" FontSize="22" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Content="=" Canvas.Left="360" Canvas.Top="106" Foreground="White" FontFamily="OCR A Extended" IsEnabled="False" FontSize="18" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top"/>
         <Label Content="=" Canvas.Left="361" Canvas.Top="224" Foreground="White" FontSize="18" FontFamily="OCR A Extended" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label x:Name="lblAddOrSubtract" Content="+ | -" Canvas.Left="169" Canvas.Top="109" Foreground="White" FontFamily="OCR A Extended" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Label x:Name="lblMultipyOrDivide" Content="* | /" Canvas.Left="174" Canvas.Top="225" Foreground="White" FontSize="14" FontFamily="OCR A Extended" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button x:Name="btnAdd" Content="ADD" Canvas.Left="541" Canvas.Top="103" HorizontalAlignment="Left" VerticalAlignment="Top" Width="86" Height="36" FontFamily="OCR A Extended" FontSize="16" Click="btnAdd_Click"/>
-        <Button x:Name="btnAverage" Content="AVERAGE" Canvas.Left="488" Canvas.Top="340" HorizontalAlignment="Left" VerticalAlignment="Top" Width="178" Height="42" Foreground="Black" FontFamily="OCR A Extended" FontSize="18" Click="btnAverage_Click"/>
-        <Button x:Name="btnSubtract" Content="SUBTRACT" Canvas.Left="648" Canvas.Top="103" HorizontalAlignment="Left" VerticalAlignment="Top" Width="88" Height="36" FontFamily="OCR A Extended" FontSize="16" Click="btnSubtract_Click"/>
-        <Button x:Name="btnMultiply" Content="MULTIPLY" Canvas.Left="538" Canvas.Top="219" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" Height="36" FontFamily="OCR A Extended" FontSize="16" FontWeight="Normal" Click="btnMultiply_Click"/>
-        <Button x:Name="btnDivide" Content="DIVIDE" Canvas.Left="648" Canvas.Top="219" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="88" FontFamily="OCR A Extended" FontSize="16" Click="btnDivide_Click"/>
+        <Label x:Name="lblAddOrSubtract" Content="+ | -" Canvas.Left="174" Canvas.Top="109" Foreground="White" FontFamily="OCR A Extended" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="lblMultipyOrDivide" Content="* | /" Canvas.Left="179" Canvas.Top="225" Foreground="White" FontSize="14" FontFamily="OCR A Extended" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnAdd" Content="ADD" Canvas.Left="541" Canvas.Top="103" HorizontalAlignment="Left" VerticalAlignment="Center" Width="89" Height="36" FontFamily="OCR A Extended" FontSize="16" Click="btnAdd_Click" Foreground="White" Background="#FF27432E"/>
+        <Button x:Name="btnAverage" Content="AVERAGE" Canvas.Left="488" Canvas.Top="340" HorizontalAlignment="Left" VerticalAlignment="Top" Width="178" Height="42" Foreground="White" FontFamily="OCR A Extended" FontSize="18" Click="btnAverage_Click" Background="#FF27432E"/>
+        <Button x:Name="btnSubtract" Content="SUBTRACT" Canvas.Left="654" Canvas.Top="103" HorizontalAlignment="Left" VerticalAlignment="Center" Width="89" Height="36" FontFamily="OCR A Extended" FontSize="16" Click="btnSubtract_Click" Foreground="White" Background="#FF27432E"/>
+        <Button x:Name="btnMultiply" Content="MULTIPLY" Canvas.Left="538" Canvas.Top="219" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" Height="36" FontFamily="OCR A Extended" FontSize="16" FontWeight="Normal" Click="btnMultiply_Click" Background="#FF27432E" Foreground="White"/>
+        <Button x:Name="btnDivide" Content="DIVIDE" Canvas.Left="654" Canvas.Top="219" HorizontalAlignment="Left" Height="36" VerticalAlignment="Center" Width="89" FontFamily="OCR A Extended" FontSize="16" Click="btnDivide_Click" Foreground="White" Background="#FF27432E"/>
 
     </Canvas>
 </Window>
