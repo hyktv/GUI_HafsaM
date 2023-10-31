@@ -18,6 +18,7 @@ namespace GUI_HafsaM
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    
     //HAFSA MOHAMED OCT. 30 - GUI_HafsaM
 
     public partial class MainWindow : Window
@@ -54,8 +55,7 @@ namespace GUI_HafsaM
             txtResult1.Text = w;
 
             //create a message box for an invalid number
-            //string g =  
-            //MessageBox.Show();
+                       
 
         }//addition button
 
